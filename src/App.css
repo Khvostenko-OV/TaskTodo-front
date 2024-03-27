@@ -1,38 +1,198 @@
-.App {
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1em;
+}
+
+.tasks_page {
+  width: 100%;
+}
+
+.auth {
+  display: flex;
+  width: fit-content;
+  background: white;
+  margin: .1em;
+  padding: .2em;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: .2em;
+}
+
+.message {
+  color: cadetblue;
+  position: absolute;
+  top: .4em;
+  left: 12em;
+  z-index: 100;
+}
+
+.task_list {
+  margin: .5em 0 0 1em;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.task_header {
+  height: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: default;
+  align-items: center;
+}
+
+
+.number {
+  width: 3em;
+  text-align: center;
+  margin: 0 0 0 .3em;
+}
+
+.author {
+  width: 8em;
+  margin: 0 0 0 .3em;
+  overflow-x: hidden;
+}
+
+.email {
+  width: 18em;
+  margin: 0 0 0 .3em;
+  overflow-x: hidden;
+}
+
+.status {
+  width: 9em;
+  margin: 0 0 0 .3em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task_text {
+  margin: .5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text {
+  width: 66%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.click {
+  text-align: center;
+  background: rgb(241, 240, 240);
+  cursor: pointer;
+}
+
+.click:hover {
+  background: #f7f9db;
+}
+
+.input {
+  margin: .3em;
+}
+
+.label {
+  background: rgb(241, 240, 240);
+  margin: 0 .3em;
+  padding: .2em;
+}
+
+.paginator {
   display: flex;
-  flex-direction: column;
+  margin: 0 1em;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: default;
+}
+
+.page_btn {
+  margin: 0 .2em;
+  padding: .5em;
+  background: cornflowerblue;
+  cursor: pointer;
+}
+
+.page_btn:hover {
+  background: blue;
+}
+
+.page_btn_curr {
+  margin: 0 .2em;
+  padding: .5em;
+  color: blue;
+  border: 1px solid #888;
+}
+
+.action-btn {
+  width: fit-content;
+  background: #44F;
   color: white;
+  margin: .5em 1em;
+  padding: .2em .5em;
+  border: 1px solid #11d;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.action-btn:hover {
+  background: #11D;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cancel-btn {
+  width: fit-content;
+  background: lightgray;
+  margin: 0 1em;
+  padding: .2em .5em;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.cansel-btn:hover {
+  background: darkgray;
+}
+
+.title {
+  font-size: larger;
+  font-weight: 700;
+  margin: .3em .5em .3em .5em;
+}
+
+.error_msg {
+  margin: .5em 0;
+  color: #f88;
+}
+
+.task_create {
+  min-width: 480px;
+  max-width: 640px;
+  background: white;
+  padding: 1em;
+  border: 1px solid #888;
+  border-radius: 2px;
+  text-align: center;
+  position: absolute;
+  left: 400px;
+  top: 66px;
+}
+
+.login {
+  width: 320px;
+  background: white;
+  padding: 1em;
+  border: 1px solid #888;
+  border-radius: 2px;
+  text-align: center;
+  position: absolute;
+  left: 400px;
+  top: 66px;
+}
+
+.logout {
+  width: 200px;
+  background: white;
+  padding: 1em;
+  border: 1px solid #888;
+  border-radius: 2px;
+  text-align: center;
+  position: absolute;
+  left: 400px;
+  top: 66px;
 }
